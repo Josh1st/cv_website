@@ -1,0 +1,153 @@
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+.knowledge-button {
+  cursor: pointer;
+}
+
+.profile-pic {
+  width: 100%;
+  height: auto;
+}
+
+.gradient-border {
+  padding: 2px;
+  background: linear-gradient(
+    138.08deg,
+    #d9d9d9 14.02%,
+    #d3d3d3 14.03%,
+    #737373 85.66%
+  );
+}
+
+.gradient-border-thick {
+  padding: 8px;
+}
+
+.nav-arrow {
+  display: block;
+  width: 83px;
+  height: auto;
+}
+
+.about-decoration, .contact-decoration{
+  width: 50%;
+  height: 100%;
+  right: 0;
+}
+
+.about-gradient {
+  background: linear-gradient(90deg, #666666 0%, #00000000 100%);
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.knowledge-button {
+  margin: 1rem 2rem;
+}
+
+.knowledge-options {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.center-absolute {
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+
+.nav {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 3rem;
+  gap: 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  padding: 0.3rem 1rem;
+  border-radius: 100px;
+  box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.3);
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  text-decoration: none;
+  color: inherit;
+  background-color: #d9d9d9;
+  padding: 0.3rem 1rem;
+  border-radius: 100px;
+  margin: 2px;
+}
+
+.btn-border {
+    display: inline-flex;
+  background: linear-gradient(111.27deg, #d9d9d9 0%, #737373 98.27%);
+  border-radius: 100px;
+}
+
+.image-border{
+    display: inline-flex;
+    background: linear-gradient(111.27deg, rgb(99,102,241) 0%, #cecece 98.27%);
+    border-radius: 1.1rem;
+}
+
+.image-border{
+    display: inline-flex;
+    background: linear-gradient(111.27deg, rgb(99,102,241) 0%, #cecece 98.27%);
+    border-radius: 1.1rem;
+}
+
+.image-border img{
+    margin: 2px;
+    width: calc(100% - 4px);
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}

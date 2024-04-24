@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Waurich</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/poppins.css">
+    <link rel="stylesheet" href="styles/util.css">
+</head>
+<body>
+    <section id="header" class="header h-100vh d-flex flex-col flex-h-center pos-r">
+        <div class="center-absolute w-100 h-100" id="header_rain"></div>
+        <div class="container d-flex py-5 pos-r">
+            <div class="d-flex flex-v-center">
+                <div class="col-6">
+                    <h1 class="poppins-medium">Joshua<br />Waurich</h1>
+                </div>
+                <div class="col-6">
+                    <div
+                        class="round-100 gradient-border gradient-border-thick shadow d-flex flex-v-center flex-h-center ">
+                        <img class="profile-pic round-100" src="/images/profile-pic.png" alt="Joshua Waurich">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-100 d-flex flex-h-center pos-r" style="top: -1rem">
+            <img class="nav-arrow" src="/images/arrow.png" alt="navigation arrow">
+        </div>
+    </section>
+    <section id="about" class="header h-100vh d-flex flex-col flex-h-center pos-r">
+        <div class="container d-flex py-5">
+            <div class="d-flex flex-v-center">
+                <div class="col-4">
+                    <h2 class="poppins-medium">About Me</h2>
+                    <p>My name is Joshua Waurich, I'm a driven programmer with a passion for building useful tools. My aim is to create solutions
+                        that streamline tasks and enhance experiences.<br/><br/>Outside of work, you'll find me listening to
+                        electronic music (especially deadmau5!), deepening my faith or playing video games. 🕹️</p>
+                </div>
+            </div>
+        </div>
+        <div class="pos-a about-decoration">
+            <div class="center-absolute w-100 h-100 bg-black"></div>
+            <div class="center-absolute w-100 h-100" id="about_rain"></div>
+            <div class="center-absolute w-100 h-100 about-gradient"></div>
+        </div>
+    </section>
+    <section id="knowledge" class="header h-100vh d-flex flex-col flex-h-center pos-r">
+        <div class="container d-flex flex-col py-5">
+            <div class="w-100">
+                <h2 class="poppins-medium">Knowledge</h2>
+                <div class="knowledge-options d-inline-flex wrap">
+                    <div class="knowledge-button underline" show="Programing-content,Programing-image">Programing</div>
+                    <div class="knowledge-button" show="Design-content,Design-image">Design</div>
+                    <div class="knowledge-button" show="Devops-content,Devops-image">Devops/Cloud</div>
+                </div>
+            </div>
+            <div class="d-flex Knowledge-section">
+                <div class="col-6 pe-1">
+                    <p class="knowledge-content pt-2" id="Programing-content">My coding journey began in December 2015
+                        with
+                        Java, quickly expanding to JavaScript and PHP. Over the years, I've embraced new challenges,
+                        exploring Python and C#. I'm driven by a constant desire to learn and adapt, always seeking the
+                        right tool for the job.</p>
+                    <p class="knowledge-content pt-2 d-none" id="Design-content">While my primary focus lies in coding,
+                        I
+                        possess a keen eye for design. I understand the fundamentals of graphic design and enjoy
+                        applying them to create user interfaces that are both functional and visually appealing.</p>
+                    <p class="knowledge-content pt-2 d-none" id="Devops-content">I possess solid DevOps experience,
+                        having
+                        deployed multiple Linux-based applications and authored deployment scripts.
+                        <br/><br/>
+                        I'm well-versed in
+                        cloud services like Google Cloud, Cloudflare, and Digital Ocean, with a focus on serverless
+                        functions and object storage.</p>
+                </div>
+                <div class="col-6 ps-1">
+
+                    <div class="image-border">
+                        <img id="Programing-image" class="knowledge-content h-auto round-1" src="/images/code.jpg"
+                            alt="Code on a screen">
+                    </div>
+
+                    <div class="image-border">
+                        <img id="Design-image" class="knowledge-content w-100 h-auto round-1 d-none"
+                            src="/images/design.jpg" alt="Code on a screen">
+                    </div>
+
+                    <div class="image-border">
+                        <img id="Devops-image" class="knowledge-content w-100 h-auto round-1 d-none"
+                            src="/images/cloud.jpg" alt="Code on a screen">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="header h-100vh d-flex flex-col flex-h-center pos-r">
+        <div class="container d-flex flex-col py-5">
+            <div class="w-100">
+                <h2 class="poppins-medium">Projects</h2>
+            </div>
+            <div class="d-flex project-section">
+                <div class="col-6 pe-1">
+                    <div class="project-options d-inline-flex flex-col wrap">
+                        <div class="project-button pt-1 underline" show="lyric-video-maker-content">Lyric Video Maker
+                        </div>
+                        <div class="project-button pt-1" show="static-site-generator-content">Static Site Generator
+                        </div>
+                        <div class="project-button pt-1" show="gas-consumption-calculator-content">Gas Consumption
+                            Calculator
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 ps-1">
+                    <div id="lyric-video-maker-content" class="project-content">
+                        <p>This app was made with Vue, Python and C#, the goal of this app is to make it easy to create
+                            lyric videos. The app is hosted for free on a 4 core 24 GB RAM arm server from Oracle. You
+                            can view the app here: <a target="_blank"
+                                href="https://big-byte-solutions.co.za/lyrics/">https://big-byte-solutions.co.za/lyrics/</a>
+                        </p>
+                        <div class="image-border">
+                            <img id="Programing-image" class="h-auto round-1 mt-1" src="/images/lyricmaker.png"
+                                alt="Code on a screen">
+                        </div>
+                    </div>
+
+                    <div id="static-site-generator-content" class="project-content d-none">
+                        <p>This app was primarily built to be a modern alternative to httrack, though it may not have
+                            feature parity, it can be easily modified to clone what ever website you want. you can find
+                            the GitHub page here: <a target="_blank"
+                                href="https://github.com/Josh1st/static_site_generator/tree/main">https://github.com/Josh1st/static_site_generator/tree/main</a>
+                        </p>
+                        <div class="image-border">
+                            <img id="Design-image" class="w-100 h-auto round-1 mt-1" src="/images/staticsitegen.png"
+                                alt="Code on a screen">
+                        </div>
+                    </div>
+
+                    <div id="gas-consumption-calculator-content" class="project-content d-none">
+                        <p>This calculator will calculate a geyser's consumption based on the consumption metrics of the
+                            gas geyser. I was built with Vue.js and basic math. You can find the link to the calculator
+                            here: <a target="_blank"
+                                href="https://gas-installers.co.za/blog/gas-geyser-consumption-calculator/">https://gas-installers.co.za/blog/gas-geyser-consumption-calculator/</a>
+                        </p>
+                        <div class="image-border">
+                            <img id="Devops-image" class="w-100 h-auto round-1 mt-1"
+                                src="/images/gasconsumptioncalc.png" alt="Code on a screen">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="header h-100vh d-flex flex-col flex-h-center pos-r">
+        <div class="container d-flex py-5">
+            <div class="col-6 pe-1">
+                <h2 class="poppins-medium">Contact Me</h2>
+                <div class="mt-3">
+                    <p>Name: Joshua Waurich</p>
+                    <p>Location: Germiston, Gauteng, South Africa</p>
+                    <p>Email: joshua@codecabin.co.za</p>
+                    <div class="btn-border">
+                        <a class="btn" href="mailto:joshua@codecabin.co.za">Click To Email</a>
+                    </div>
+                    <p>Cell: 083 384 0926</p>
+                    <div class="btn-border">
+                        <a class="btn" F href="tel:083 384 0926">Click To Call</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pos-a contact-decoration bg-black">
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.1.5/build/spline-viewer.js"></script>
+            <spline-viewer url="https://prod.spline.design/17xmCiNfADIXFsYO/scene.splinecode"></spline-viewer>
+        </div>
+    </section>
+    <!-- navbar -->
+    <div class="nav d-inline-flex">
+        <a href="#about">About</a>
+        <a href="#knowledge">Knowledge</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.min.js"
+        integrity="sha512-0zGLOFv/+OQ6YfVCSGDQWhrDRx0ONmBqWvs3gI4olm8i6xtKoG1FhEnB4eTaWCVnojyfUDgE8Izeln+mAJAkFA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="/scripts/main.js"></script>
+</body>
+</html>
