@@ -18,9 +18,9 @@
     <section id="header" class="header h-100vh d-flex flex-col flex-h-center pos-r">
         <div class="center-absolute w-100 h-100" id="header_rain"></div>
         <div class="container d-flex py-5 pos-r">
-            <div class="d-flex flex-v-center">
+            <div class="d-flex flex-v-center wrap">
                 <div class="col-6">
-                    <h1 class="poppins-medium">Joshua<br />Waurich</h1>
+                    <h1 class="poppins-medium text-center text-left-md">Joshua<br />Waurich</h1>
                 </div>
                 <div class="col-6">
                     <div
@@ -45,7 +45,7 @@
                 </div>
             </div>
         </div>
-        <div class="pos-a about-decoration">
+        <div class="pos-a about-decoration d-none d-md-block">
             <div class="center-absolute w-100 h-100 bg-black"></div>
             <div class="center-absolute w-100 h-100" id="about_rain"></div>
             <div class="center-absolute w-100 h-100 about-gradient"></div>
@@ -61,18 +61,18 @@
                     <div class="knowledge-button" show="Devops-content,Devops-image">Devops/Cloud</div>
                 </div>
             </div>
-            <div class="d-flex Knowledge-section">
+            <div class="d-flex Knowledge-section wrap">
                 <div class="col-6 pe-1">
-                    <p class="knowledge-content pt-2" id="Programing-content">My coding journey began in December 2015
+                    <p class="knowledge-content pt-3 m-0" id="Programing-content">My coding journey began in December 2015
                         with
                         Java, quickly expanding to JavaScript and PHP. Over the years, I've embraced new challenges,
                         exploring Python and C#. I'm driven by a constant desire to learn and adapt, always seeking the
                         right tool for the job.</p>
-                    <p class="knowledge-content pt-2 d-none" id="Design-content">While my primary focus lies in coding,
+                    <p class="knowledge-content pt-3 m-0 d-none" id="Design-content">While my primary focus lies in coding,
                         I
                         possess a keen eye for design. I understand the fundamentals of graphic design and enjoy
                         applying them to create user interfaces that are both functional and visually appealing.</p>
-                    <p class="knowledge-content pt-2 d-none" id="Devops-content">I possess solid DevOps experience,
+                    <p class="knowledge-content pt-3 m-0 d-none" id="Devops-content">I possess solid DevOps experience,
                         having
                         deployed multiple Linux-based applications and authored deployment scripts.
                         <br/><br/>
@@ -82,17 +82,17 @@
                 </div>
                 <div class="col-6 ps-1">
 
-                    <div class="image-border">
+                    <div class="image-border mt-3">
                         <img id="Programing-image" class="knowledge-content h-auto round-1" src="/images/code.jpg"
                             alt="Code on a screen">
                     </div>
 
-                    <div class="image-border">
+                    <div class="image-border mt-3">
                         <img id="Design-image" class="knowledge-content w-100 h-auto round-1 d-none"
                             src="/images/design.jpg" alt="Code on a screen">
                     </div>
 
-                    <div class="image-border">
+                    <div class="image-border mt-3">
                         <img id="Devops-image" class="knowledge-content w-100 h-auto round-1 d-none"
                             src="/images/cloud.jpg" alt="Code on a screen">
                     </div>
@@ -105,7 +105,7 @@
             <div class="w-100">
                 <h2 class="poppins-medium">Projects</h2>
             </div>
-            <div class="d-flex project-section">
+            <div class="d-flex project-section wrap">
                 <div class="col-6 pe-1">
                     <div class="project-options d-inline-flex flex-col wrap">
                         <div class="project-button pt-1 underline" show="lyric-video-maker-content">Lyric Video Maker
@@ -118,14 +118,14 @@
                     </div>
                 </div>
                 <div class="col-6 ps-1">
-                    <div id="lyric-video-maker-content" class="project-content">
+                    <div id="lyric-video-maker-content" class="project-content mt-3 mt-md-0">
                         <p>This app was made with Vue, Python and C#, the goal of this app is to make it easy to create
                             lyric videos. The app is hosted for free on a 4 core 24 GB RAM arm server from Oracle. You
                             can view the app here: <a target="_blank"
                                 href="https://big-byte-solutions.co.za/lyrics/">https://big-byte-solutions.co.za/lyrics/</a>
                         </p>
                         <div class="image-border">
-                            <img id="Programing-image" class="h-auto round-1 mt-1" src="/images/lyricmaker.png"
+                            <img id="Programing-image" class="h-auto round-1 mt-1 shadow" src="/images/lyricmaker.png"
                                 alt="Code on a screen">
                         </div>
                     </div>
@@ -137,7 +137,7 @@
                                 href="https://github.com/Josh1st/static_site_generator/tree/main">https://github.com/Josh1st/static_site_generator/tree/main</a>
                         </p>
                         <div class="image-border">
-                            <img id="Design-image" class="w-100 h-auto round-1 mt-1" src="/images/staticsitegen.png"
+                            <img id="Design-image" class="w-100 h-auto round-1 mt-1 shadow" src="/images/staticsitegen.png"
                                 alt="Code on a screen">
                         </div>
                     </div>
@@ -149,7 +149,7 @@
                                 href="https://gas-installers.co.za/blog/gas-geyser-consumption-calculator/">https://gas-installers.co.za/blog/gas-geyser-consumption-calculator/</a>
                         </p>
                         <div class="image-border">
-                            <img id="Devops-image" class="w-100 h-auto round-1 mt-1"
+                            <img id="Devops-image" class="w-100 h-auto round-1 mt-1 shadow"
                                 src="/images/gasconsumptioncalc.png" alt="Code on a screen">
                         </div>
                     </div>
@@ -175,7 +175,7 @@
                 </div>
             </div>
         </div>
-        <div class="pos-a contact-decoration bg-black">
+        <div class="pos-a contact-decoration bg-black d-none d-md-block">
             <script type="module" src="https://unpkg.com/@splinetool/viewer@1.1.5/build/spline-viewer.js"></script>
             <spline-viewer url="https://prod.spline.design/17xmCiNfADIXFsYO/scene.splinecode"></spline-viewer>
         </div>

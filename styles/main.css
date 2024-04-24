@@ -8,10 +8,6 @@ body {
   font-size: 18px;
 }
 
-.knowledge-button {
-  cursor: pointer;
-}
-
 .profile-pic {
   width: 100%;
   height: auto;
@@ -115,6 +111,12 @@ body {
 .image-border img{
     margin: 2px;
     width: calc(100% - 4px);
+}
+
+.project-button, .knowledge-button{
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
 }
 
 /* Small devices (landscape phones, 576px and up) */

@@ -1,5 +1,7 @@
 const run_p5 = (selector, dark=false) => {
 
+    // todo: check if parent is visible
+
     let sketch = document.querySelector(selector);
 
     try {
