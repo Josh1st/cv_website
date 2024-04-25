@@ -13,6 +13,23 @@ body {
   height: auto;
 }
 
+.profile-pic-border {
+  box-shadow: 0px -10px 18px rgba(0, 219, 222, 0.34);
+  box-shadow: 0px 10px 18px rgba(252, 0, 255, 0.34);
+  background: linear-gradient(180deg, #00DBDE 0%, #FC00FF 100%);
+  animation: spin 4s linear infinite;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+
+@keyframes spin { 
+  100% {
+      transform: translate(-50%, -50%) rotate(360deg); 
+  } 
+}
+
 .gradient-border {
   padding: 2px;
   background: linear-gradient(
@@ -79,6 +96,11 @@ body {
 .nav a {
   text-decoration: none;
   color: white;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #d9d9d9;
 }
 
 .btn {
@@ -94,6 +116,28 @@ body {
     display: inline-flex;
   background: linear-gradient(111.27deg, #d9d9d9 0%, #737373 98.27%);
   border-radius: 100px;
+}
+
+@property --pc { /* purple/coral */
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 30%;
+}
+@property --co { /* coral/orange */
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 100%;
+}
+
+.gradient {
+  transition: --pc 0.2s, --co 0.2s;
+
+  background: linear-gradient(30deg, #00DBDE var(--pc), #FC00FF var(--co), #00DBDE);
+}
+
+.gradient:hover {
+  --pc: -100%;
+  --co: 0%;
 }
 
 .image-border{
