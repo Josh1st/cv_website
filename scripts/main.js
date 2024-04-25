@@ -11,6 +11,14 @@ let p5_obj2 = null;
 document.addEventListener('DOMContentLoaded',()=>{
     p5_obj = run_p5('#header_rain');
     p5_obj2 = run_p5('#about_rain', true);
+
+
+    
+    VanillaTilt.init(document.querySelectorAll(".image-border"), {
+		max: 5,
+		speed: 100
+	});
+
 })
 
 window.addEventListener("resize", () => {
