@@ -4,6 +4,12 @@ const run_p5 = (selector, dark=false) => {
 
     let sketch = document.querySelector(selector);
 
+    let parent = sketch.parentElement;
+    
+    if (window.getComputedStyle(parent).display === 'none') {
+        return null
+    }
+
     try {
         sketch.innerHTML = ''
     } catch (error) {

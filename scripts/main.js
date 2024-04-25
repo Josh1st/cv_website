@@ -15,11 +15,19 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 window.addEventListener("resize", () => {
 
-    p5_obj.remove();
-    p5_obj = null
-
-    p5_obj2.remove();
-    p5_obj2 = null
+    try {
+        p5_obj.remove();
+        p5_obj = null
+    } catch (error) {
+        console.error(console.error(error));
+    }
+    
+    try {
+        p5_obj2.remove();
+        p5_obj2 = null
+    } catch (error) {
+        console.error(console.error(error));
+    }
 
     p5_obj = run_p5('#header_rain');
     p5_obj2 = run_p5('#about_rain', true);
