@@ -119,6 +119,46 @@ body {
     cursor: pointer;
 }
 
+.banner1{
+    position: absolute;
+    height: 75%;
+    width: 25vw;
+    left: 19%;
+    top: -13%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+    transform: rotate(-28.56deg);
+}
+
+.banner2{
+  position: absolute;
+  height: 75%;
+  width: 25vw;
+  right: 19%;
+  bottom: -13%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+  transform: rotate(calc(180deg - 28.56deg));
+}
+
+.banner3{
+  position: absolute;
+  height: 75%;
+  width: 25vw;
+  right: 19%;
+  top: -13%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+  transform: rotate(28.56deg);
+}
+
+.banner4{
+  position: absolute;
+  height: 75%;
+  width: 25vw;
+  left: 19%;
+  bottom: -13%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+  transform: rotate(calc(180deg + 28.56deg));
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .container {
