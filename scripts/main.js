@@ -17,6 +17,11 @@ document.addEventListener('DOMContentLoaded',()=>{
 		speed: 100
 	});
 
+    VanillaTilt.init(document.querySelector(".gradient-border-thick"), {
+		max: 5,
+		speed: 100
+	});
+
 })
 
 window.addEventListener("resize", () => {
