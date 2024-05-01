@@ -12,13 +12,13 @@ document.addEventListener('DOMContentLoaded',()=>{
     rain2 = make_rain('#about_rain', true);
 
     // credit to https://micku7zu.github.io/vanilla-tilt.js/
-    VanillaTilt.init(document.querySelectorAll(".image-border"), {
+    VanillaTilt.init(document.querySelectorAll(".image-border, .gradient-border-thick"), {
 		max: 5,
 		speed: 100
 	});
 
-    VanillaTilt.init(document.querySelector(".gradient-border-thick"), {
-		max: 5,
+    VanillaTilt.init(document.querySelectorAll(".btn-border"), {
+		max: 10,
 		speed: 100
 	});
 
