@@ -1,19 +1,17 @@
 import showHide from "./show_hide.js";
-import run_p5 from "./p5.js";
+import make_rain from "./rain.js";
 
 showHide('.knowledge-button', 'knowledge');
-
 showHide('.project-button', 'project');
 
-let p5_obj = null;
-let p5_obj2 = null;
+let rain1 = null;
+let rain2 = null;
 
 document.addEventListener('DOMContentLoaded',()=>{
-    p5_obj = run_p5('#header_rain');
-    p5_obj2 = run_p5('#about_rain', true);
+    rain1 = make_rain('#header_rain');
+    rain2 = make_rain('#about_rain', true);
 
-
-    
+    // credit to https://micku7zu.github.io/vanilla-tilt.js/
     VanillaTilt.init(document.querySelectorAll(".image-border"), {
 		max: 5,
 		speed: 100
@@ -24,19 +22,22 @@ document.addEventListener('DOMContentLoaded',()=>{
 window.addEventListener("resize", () => {
 
     try {
-        p5_obj.remove();
-        p5_obj = null
+        // clear the internal so that we don't have duplicates
+        // running in the background
+        clearInterval(rain1);
+        rain1 = null;
     } catch (error) {
         console.error(console.error(error));
     }
     
     try {
-        p5_obj2.remove();
-        p5_obj2 = null
+        clearInterval(rain2);
+        rain2 = null
     } catch (error) {
         console.error(console.error(error));
     }
 
-    p5_obj = run_p5('#header_rain');
-    p5_obj2 = run_p5('#about_rain', true);
+    // re-initalise the rain maker
+    rain1 = make_rain('#header_rain');
+    rain2 = make_rain('#about_rain', true);
 });

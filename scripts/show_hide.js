@@ -2,12 +2,13 @@
 
 function showHide (buttonSelector, generalSelector) {
     let buttons = document.querySelectorAll(buttonSelector)
+
+    // listen for clicks
     for (const button of buttons) {
         button.addEventListener('click', handleClick)
     }
 
     function handleClick (event) {
-        console.log(event);
         let button = event.target
         let buttons = document.querySelectorAll(`.${generalSelector}-button`);
         let contentItems = document.querySelectorAll(`.${generalSelector}-content`);
@@ -44,4 +45,5 @@ function showHide (buttonSelector, generalSelector) {
 
 }
 
+// 🙉🙈
 export default showHide;
